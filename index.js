@@ -19,7 +19,7 @@ try {
 
  fs.writeFileSync("timestamp/date-time.txt", dateString )
 
- const fileName = path.join('/timestamp','date-time.html')
+ const fileName = path.join('/timestamp','date-time.txt')
 
 app.get("/", function (req, res) {
   res.send(`he date and time shold be in ${fileName} : folder go to localhost 3007/static to view the updated time`);
